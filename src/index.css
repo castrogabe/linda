@@ -1,153 +1,150 @@
-/* CSS Variables */
+/* index.css */
 :root {
   --primary: #ffffff;
-  --verydark: #212529; /* header color */
-  --dark: #272b30;
-  --medium: #68655d;
-  --background: #f4f4f4; /* very light gray */
-  --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+  --bold: #0097b2;
+  --secondary: #9a9da0;
+  --accent: #f4f4f4; /* very light gray */
+  --bottom-footer-bg: #000000; /* black */
 }
 
 /* For desktop: */
-.main {
-  flex: 1 0 auto;
-  width: 100%;
-  min-height: 80vh;
-  background-color: var(--background);
+main {
+  flex: 1;
+  min-height: 70vh;
+  background-color: var(--accent);
 }
 
-.nav {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-}
-/* .nav-logo {
-  min-height: 1rem;
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-} */
-
-.footer {
-  background-color: var(--verydark);
-  color: var(--background);
-  text-align: center;
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-}
-
-a.email {
-  text-decoration: none;
-  color: var(--background);
-}
-
-/* gif and image not jumbotron*/
-.about-fluid {
-  background-image: url(https://media1.tenor.com/images/b1b118ed130d9ab085e475ab0ecadcb6/tenor.gif?itemid=15826314);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  color: var(--background);
-  margin-bottom: 1em;
-  text-align: center;
-  padding-top: 1em;
-  padding-bottom: 1em;
-}
-
-.about-fluid h3 {
-  text-shadow: 2px 2px 4px blueviolet;
-}
-
-.img-circle {
-  border-radius: 50%;
-  max-width: 15em;
-  position: center;
-  padding-bottom: 1em;
-  padding-top: 1em;
-}
-
-/***** visit website button *****/
-.my-button {
-  font-size: 1em;
-  line-height: normal;
-  text-transform: uppercase;
-  font-family: 'Lato', sans-serif;
-  font-weight: 900;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out, color 0.2s 0.3s;
-  letter-spacing: 0;
-  border-radius: 45px;
-  height: auto;
-  padding: 0.5em 1em;
-}
-
-.my-button:hover {
-  cursor: pointer;
-  padding: 0.5em 1.5em;
-}
-
-/* button orange with orange boarder */
-.details a,
-.details a:link,
-.details a:active {
-  color: rgba(255, 103, 68, 0.91);
-  border: 2px solid rgba(255, 103, 68, 0.91) !important;
-  background-color: #fff;
-  text-decoration: none;
-  /* margin-left: 5%; */
-}
-
-/* turns button orange on hover */
-.details a:hover,
-.details a:focus {
-  background-color: rgba(255, 103, 68, 0.91) !important;
-  color: #fff;
+.content {
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 .box {
-  font-family: 'Maven pro', sans-serif;
   background: #fff;
   margin: 0 0 30px;
-  border: solid 1px #e6e6e6;
+  border: solid 1px var(--light);
   padding: 30px;
   -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
 }
 
-.img-portfolio {
-  max-width: 100%;
+/* Header */
+.header {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background: var(--bold);
+  padding-left: 5%;
+  padding-right: 5%;
+}
+/* Logo */
+.navbar-brand > img {
+  height: 200px;
+  width: 200px;
+  margin-top: -2rem;
+  margin-bottom: -2rem;
+}
+/* Dropdown */
+.dropdown {
+  display: block;
+  position: relative;
 }
 
-@media (max-width: 700px) {
-  .box {
-    font-size: small;
-  }
+/* Gallery */
+.gallery {
+  text-align: center;
+  margin-top: 20px;
+}
+.gallery-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.gallery-item {
+  max-width: 200px;
+  text-align: center;
+}
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.hero h1,
+.hero h4,
+.highlight h2,
+.visit-us h2,
+.gallery h2 {
+  color: #8b4513; /* A rich brown color */
+}
 
-  .nav {
-    padding-left: 5%;
-    padding-right: 5%;
-  }
+/* Jumbotron */
+.jumbotron.jumbotron-fluid {
+  width: 100%;
+  height: 450px;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0;
+}
+.jumbotron {
+  background-image: url('./images/jumbotron.png');
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-size: 100%;
+}
 
-  /* gif and image not jumbotron*/
-  .about {
-    background-image: url(https://media1.tenor.com/images/b1b118ed130d9ab085e475ab0ecadcb6/tenor.gif?itemid=15826314);
-    background-repeat: no-repeat;
-    /* background-size: 100%; */
+/* Footer */
+footer {
+  text-decoration: none !important;
+  font-size: 1rem;
+  padding: 1rem;
+  margin-top: 1rem;
+  background: var(--bold);
+  color: #ffffff;
+  text-align: center;
+}
+/* Footer social icons */
+a.socialIcon {
+  margin: 0 1rem;
+}
+.socialIcon a:hover {
+  color: var(--dark);
+}
+.socialIcon {
+  margin: 0 1rem;
+  transition: transform 250ms;
+}
+a.facebookIcon {
+  color: var(--primary);
+  text-decoration: none !important;
+}
+a.instagramIcon {
+  color: var(--primary);
+  text-decoration: none !important;
+}
+a.youtubeIcon {
+  color: var(--primary);
+  text-decoration: none !important;
+}
+a.email {
+  color: var(--primary);
+  text-decoration: none !important;
+}
 
-    color: var(--medium);
-    margin-bottom: 1em;
-    text-align: center;
-    padding-top: 1em;
-    padding-bottom: 1em;
-  }
-
-  .img-circle {
-    border-radius: 50%;
-    max-width: 5em;
-    position: center;
-    padding-bottom: 1em;
-    padding-top: 1em;
-  }
-
-  h3 {
-    font-size: small;
-    color: var(--primary);
-  }
+/* Bottom Footer */
+.bottom-footer {
+  text-decoration: none;
+  width: 100%;
+  font-size: 1rem;
+  padding: 1rem;
+  background: black;
+  color: #ffffff;
+  text-align: center;
+}
+/* gabewd in BottomFooter link color */
+#linked {
+  color: var(--secondary);
+  text-decoration: none;
 }
