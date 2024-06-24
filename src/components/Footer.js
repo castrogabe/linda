@@ -30,6 +30,16 @@ const Footer = () => {
                   <i className='fab fa-instagram'></i> Instagram
                 </Link>
               </li>
+              <li>
+                <Link
+                  to='https://www.instagram.com/'
+                  className='instagramIcon'
+                  target='_blank'
+                  rel='noreferrer'
+                >
+                  <i className='fab fa-charish'></i> Charish
+                </Link>
+              </li>
             </ul>
           </div>
         </Col>
@@ -57,13 +67,13 @@ const Footer = () => {
           Hours
           <div className='socialIcon'>
             <ul className='list-unstyled'>
-              <li>Monday:</li>
-              <li>Tuesday:</li>
-              <li>Wednesday:</li>
-              <li>Thursday:</li>
-              <li>Friday:</li>
-              <li>Saturday:</li>
-              <li>Sunday:</li>
+              <li>Monday: Closed</li>
+              <li>Tuesday: Closed</li>
+              <li>Wednesday: 11-5</li>
+              <li>Thursday: 11-5</li>
+              <li>Friday: 11-5</li>
+              <li>Saturday: 11-5</li>
+              <li>Sunday: Closed</li>
             </ul>
           </div>
         </Col>

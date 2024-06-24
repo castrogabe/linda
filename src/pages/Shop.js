@@ -20,6 +20,10 @@ export default function Shop() {
           <h2>Shopping</h2>
           <div className='gallery-grid'>
             <div className='gallery-item'>
+              <img src='/images/1.png' alt='Antique item 01' />
+              <p>Pottery</p>
+            </div>
+            <div className='gallery-item'>
               <img src='/images/2.png' alt='Antique item 1' />
               <p>Glassware</p>
             </div>
@@ -66,6 +70,31 @@ export default function Shop() {
             <div className='gallery-item'>
               <img src='/images/13.png' alt='Antique item 12' />
               <p>Ceramic</p>
+            </div>
+            <div className='gallery-item'>
+              <img src='/images/14.png' alt='Antique item 14' />
+              <p>Pottery</p>
+            </div>
+            <div className='gallery-item'>
+              <img src='/images/15.png' alt='Antique item 15' />
+              <p>Wall Piece</p>
+            </div>
+
+            <div className='gallery-item'>
+              <img src='/images/16.png' alt='Antique item 16' />
+              <p>Cabinet</p>
+            </div>
+            <div className='gallery-item'>
+              <img src='/images/17.png' alt='Antique item 17' />
+              <p>Greek Key Pot</p>
+            </div>
+            <div className='gallery-item'>
+              <img src='/images/18.png' alt='Antique item 18' />
+              <p>Asian</p>
+            </div>
+            <div className='gallery-item'>
+              <img src='/images/19.png' alt='Antique item 19' />
+              <p>Wood Vase</p>
             </div>
           </div>
         </div>

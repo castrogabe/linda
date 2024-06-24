@@ -148,3 +148,14 @@ a.email {
   color: var(--secondary);
   text-decoration: none;
 }
+
+/* Responsive adjustments */
+@media (max-width: 700px) {
+  /* Logo */
+  .navbar-brand > img {
+    height: 200px;
+    width: 200px;
+    margin-top: -2rem;
+    margin-bottom: -2rem;
+  }
+}
